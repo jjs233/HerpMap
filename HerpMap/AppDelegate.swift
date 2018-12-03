@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Salamanders
+//  HerpMap
 //
 //  Created by Justin Sung on 11/25/18.
 //  Copyright © 2018 Justin Sung. All rights reserved.

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Salamanders.xcodeproj">
+      location = "self:/Users/jjs233/Desktop/Salamanders/HerpMap.xcodeproj">
    </FileRef>
 </Workspace>

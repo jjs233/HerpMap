@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		858DCE5021AB828B00ACD7BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858DCE4F21AB828B00ACD7BF /* AppDelegate.swift */; };
 		858DCE5221AB828B00ACD7BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858DCE5121AB828B00ACD7BF /* ViewController.swift */; };
-		858DCE5521AB828B00ACD7BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858DCE5321AB828B00ACD7BF /* Main.storyboard */; };
 		858DCE5721AB828C00ACD7BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858DCE5621AB828C00ACD7BF /* Assets.xcassets */; };
 		858DCE5A21AB828C00ACD7BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858DCE5821AB828C00ACD7BF /* LaunchScreen.storyboard */; };
 		858DCE6521AB828C00ACD7BF /* SalamandersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858DCE6421AB828C00ACD7BF /* SalamandersTests.swift */; };
 		858DCE7021AB828C00ACD7BF /* SalamandersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858DCE6F21AB828C00ACD7BF /* SalamandersUITests.swift */; };
+		858DCE7F21AB850A00ACD7BF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858DCE7E21AB850A00ACD7BF /* CoreLocation.framework */; };
+		858DCEC821ACBF2900ACD7BF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858DCEA321ACBEF100ACD7BF /* SQLite.framework */; };
+		858DCEC921ACBF4200ACD7BF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858DCEA321ACBEF100ACD7BF /* SQLite.framework */; };
+		858DCECA21ACBF4200ACD7BF /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 858DCEA321ACBEF100ACD7BF /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		85BCF1F921B4644F0009A672 /* Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 85BCF1F821B4644F0009A672 /* Camera.png */; };
+		85BCF1FC21B466890009A672 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85BCF1FA21B466890009A672 /* Main.storyboard */; };
+		85BCF20021B46E650009A672 /* View.png in Resources */ = {isa = PBXBuildFile; fileRef = 85BCF1FF21B46E650009A672 /* View.png */; };
+		85BCF20221B46EFF0009A672 /* Upload2.png in Resources */ = {isa = PBXBuildFile; fileRef = 85BCF20121B46EFF0009A672 /* Upload2.png */; };
+		85BCF20D21B49DD50009A672 /* ReCenter2.png in Resources */ = {isa = PBXBuildFile; fileRef = 85BCF20C21B49DD50009A672 /* ReCenter2.png */; };
+		85BCF21121B4B2BB0009A672 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BCF21021B4B2BB0009A672 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,22 +40,99 @@
 			remoteGlobalIDString = 858DCE4B21AB828B00ACD7BF;
 			remoteInfo = Salamanders;
 		};
+		858DCEA221ACBEF100ACD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		858DCEA421ACBEF100ACD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		858DCEA621ACBEF100ACD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		858DCEA821ACBEF100ACD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		858DCEAA21ACBEF100ACD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		858DCEAC21ACBEF100ACD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		858DCEAE21ACBEF100ACD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		858DCECB21ACBF4200ACD7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		858DCECD21ACBF4200ACD7BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				858DCECA21ACBF4200ACD7BF /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		858DCE4C21AB828B00ACD7BF /* Salamanders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salamanders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		858DCE4C21AB828B00ACD7BF /* HerpMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HerpMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		858DCE4F21AB828B00ACD7BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		858DCE5121AB828B00ACD7BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		858DCE5421AB828B00ACD7BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		858DCE5621AB828C00ACD7BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		858DCE5921AB828C00ACD7BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		858DCE5B21AB828C00ACD7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		858DCE6021AB828C00ACD7BF /* SalamandersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalamandersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		858DCE6021AB828C00ACD7BF /* HerpMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HerpMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		858DCE6421AB828C00ACD7BF /* SalamandersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalamandersTests.swift; sourceTree = "<group>"; };
 		858DCE6621AB828C00ACD7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		858DCE6B21AB828C00ACD7BF /* SalamandersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalamandersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		858DCE6B21AB828C00ACD7BF /* HerpMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HerpMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		858DCE6F21AB828C00ACD7BF /* SalamandersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalamandersUITests.swift; sourceTree = "<group>"; };
 		858DCE7121AB828C00ACD7BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		858DCE7E21AB850A00ACD7BF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		85BCF1F821B4644F0009A672 /* Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Camera.png; sourceTree = "<group>"; };
+		85BCF1FB21B466890009A672 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85BCF1FF21B46E650009A672 /* View.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = View.png; path = ../../View.png; sourceTree = "<group>"; };
+		85BCF20121B46EFF0009A672 /* Upload2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Upload2.png; sourceTree = "<group>"; };
+		85BCF20C21B49DD50009A672 /* ReCenter2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReCenter2.png; sourceTree = "<group>"; };
+		85BCF21021B4B2BB0009A672 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +140,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858DCEC821ACBF2900ACD7BF /* SQLite.framework in Frameworks */,
+				858DCE7F21AB850A00ACD7BF /* CoreLocation.framework in Frameworks */,
+				858DCEC921ACBF4200ACD7BF /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,77 +166,108 @@
 		858DCE4321AB828B00ACD7BF = {
 			isa = PBXGroup;
 			children = (
-				858DCE4E21AB828B00ACD7BF /* Salamanders */,
-				858DCE6321AB828C00ACD7BF /* SalamandersTests */,
-				858DCE6E21AB828C00ACD7BF /* SalamandersUITests */,
+				858DCE4E21AB828B00ACD7BF /* HerpMap */,
+				858DCE6321AB828C00ACD7BF /* HerpMapTests */,
+				858DCE6E21AB828C00ACD7BF /* HerpMapUITests */,
 				858DCE4D21AB828B00ACD7BF /* Products */,
+				858DCE7D21AB850A00ACD7BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		858DCE4D21AB828B00ACD7BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				858DCE4C21AB828B00ACD7BF /* Salamanders.app */,
-				858DCE6021AB828C00ACD7BF /* SalamandersTests.xctest */,
-				858DCE6B21AB828C00ACD7BF /* SalamandersUITests.xctest */,
+				858DCE4C21AB828B00ACD7BF /* HerpMap.app */,
+				858DCE6021AB828C00ACD7BF /* HerpMapTests.xctest */,
+				858DCE6B21AB828C00ACD7BF /* HerpMapUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		858DCE4E21AB828B00ACD7BF /* Salamanders */ = {
+		858DCE4E21AB828B00ACD7BF /* HerpMap */ = {
 			isa = PBXGroup;
 			children = (
 				858DCE4F21AB828B00ACD7BF /* AppDelegate.swift */,
 				858DCE5121AB828B00ACD7BF /* ViewController.swift */,
-				858DCE5321AB828B00ACD7BF /* Main.storyboard */,
+				85BCF21021B4B2BB0009A672 /* TableViewController.swift */,
 				858DCE5621AB828C00ACD7BF /* Assets.xcassets */,
+				85BCF1FA21B466890009A672 /* Main.storyboard */,
+				85BCF20C21B49DD50009A672 /* ReCenter2.png */,
+				85BCF1FF21B46E650009A672 /* View.png */,
+				85BCF1F821B4644F0009A672 /* Camera.png */,
+				85BCF20121B46EFF0009A672 /* Upload2.png */,
 				858DCE5821AB828C00ACD7BF /* LaunchScreen.storyboard */,
 				858DCE5B21AB828C00ACD7BF /* Info.plist */,
 			);
-			path = Salamanders;
+			path = HerpMap;
 			sourceTree = "<group>";
 		};
-		858DCE6321AB828C00ACD7BF /* SalamandersTests */ = {
+		858DCE6321AB828C00ACD7BF /* HerpMapTests */ = {
 			isa = PBXGroup;
 			children = (
 				858DCE6421AB828C00ACD7BF /* SalamandersTests.swift */,
 				858DCE6621AB828C00ACD7BF /* Info.plist */,
 			);
-			path = SalamandersTests;
+			path = HerpMapTests;
 			sourceTree = "<group>";
 		};
-		858DCE6E21AB828C00ACD7BF /* SalamandersUITests */ = {
+		858DCE6E21AB828C00ACD7BF /* HerpMapUITests */ = {
 			isa = PBXGroup;
 			children = (
 				858DCE6F21AB828C00ACD7BF /* SalamandersUITests.swift */,
 				858DCE7121AB828C00ACD7BF /* Info.plist */,
 			);
-			path = SalamandersUITests;
+			path = HerpMapUITests;
+			sourceTree = "<group>";
+		};
+		858DCE7D21AB850A00ACD7BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */,
+				858DCE7E21AB850A00ACD7BF /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		858DCE9921ACBEF100ACD7BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				858DCEA321ACBEF100ACD7BF /* SQLite.framework */,
+				858DCEA521ACBEF100ACD7BF /* SQLiteTests iOS.xctest */,
+				858DCEA721ACBEF100ACD7BF /* SQLite.framework */,
+				858DCEA921ACBEF100ACD7BF /* SQLiteTests Mac.xctest */,
+				858DCEAB21ACBEF100ACD7BF /* SQLite.framework */,
+				858DCEAD21ACBEF100ACD7BF /* SQLiteTests tvOS.xctest */,
+				858DCEAF21ACBEF100ACD7BF /* SQLite.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		858DCE4B21AB828B00ACD7BF /* Salamanders */ = {
+		858DCE4B21AB828B00ACD7BF /* HerpMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 858DCE7421AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "Salamanders" */;
+			buildConfigurationList = 858DCE7421AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "HerpMap" */;
 			buildPhases = (
 				858DCE4821AB828B00ACD7BF /* Sources */,
 				858DCE4921AB828B00ACD7BF /* Frameworks */,
 				858DCE4A21AB828B00ACD7BF /* Resources */,
+				858DCECD21ACBF4200ACD7BF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				858DCECC21ACBF4200ACD7BF /* PBXTargetDependency */,
 			);
-			name = Salamanders;
+			name = HerpMap;
 			productName = Salamanders;
-			productReference = 858DCE4C21AB828B00ACD7BF /* Salamanders.app */;
+			productReference = 858DCE4C21AB828B00ACD7BF /* HerpMap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		858DCE5F21AB828C00ACD7BF /* SalamandersTests */ = {
+		858DCE5F21AB828C00ACD7BF /* HerpMapTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 858DCE7721AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "SalamandersTests" */;
+			buildConfigurationList = 858DCE7721AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "HerpMapTests" */;
 			buildPhases = (
 				858DCE5C21AB828C00ACD7BF /* Sources */,
 				858DCE5D21AB828C00ACD7BF /* Frameworks */,
@@ -158,14 +278,14 @@
 			dependencies = (
 				858DCE6221AB828C00ACD7BF /* PBXTargetDependency */,
 			);
-			name = SalamandersTests;
+			name = HerpMapTests;
 			productName = SalamandersTests;
-			productReference = 858DCE6021AB828C00ACD7BF /* SalamandersTests.xctest */;
+			productReference = 858DCE6021AB828C00ACD7BF /* HerpMapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		858DCE6A21AB828C00ACD7BF /* SalamandersUITests */ = {
+		858DCE6A21AB828C00ACD7BF /* HerpMapUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 858DCE7A21AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "SalamandersUITests" */;
+			buildConfigurationList = 858DCE7A21AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "HerpMapUITests" */;
 			buildPhases = (
 				858DCE6721AB828C00ACD7BF /* Sources */,
 				858DCE6821AB828C00ACD7BF /* Frameworks */,
@@ -176,9 +296,9 @@
 			dependencies = (
 				858DCE6D21AB828C00ACD7BF /* PBXTargetDependency */,
 			);
-			name = SalamandersUITests;
+			name = HerpMapUITests;
 			productName = SalamandersUITests;
-			productReference = 858DCE6B21AB828C00ACD7BF /* SalamandersUITests.xctest */;
+			productReference = 858DCE6B21AB828C00ACD7BF /* HerpMapUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +324,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 858DCE4721AB828B00ACD7BF /* Build configuration list for PBXProject "Salamanders" */;
+			buildConfigurationList = 858DCE4721AB828B00ACD7BF /* Build configuration list for PBXProject "HerpMap" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,14 +335,72 @@
 			mainGroup = 858DCE4321AB828B00ACD7BF;
 			productRefGroup = 858DCE4D21AB828B00ACD7BF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 858DCE9921ACBEF100ACD7BF /* Products */;
+					ProjectRef = 858DCE9821ACBEF100ACD7BF /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				858DCE4B21AB828B00ACD7BF /* Salamanders */,
-				858DCE5F21AB828C00ACD7BF /* SalamandersTests */,
-				858DCE6A21AB828C00ACD7BF /* SalamandersUITests */,
+				858DCE4B21AB828B00ACD7BF /* HerpMap */,
+				858DCE5F21AB828C00ACD7BF /* HerpMapTests */,
+				858DCE6A21AB828C00ACD7BF /* HerpMapUITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		858DCEA321ACBEF100ACD7BF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 858DCEA221ACBEF100ACD7BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		858DCEA521ACBEF100ACD7BF /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 858DCEA421ACBEF100ACD7BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		858DCEA721ACBEF100ACD7BF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 858DCEA621ACBEF100ACD7BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		858DCEA921ACBEF100ACD7BF /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 858DCEA821ACBEF100ACD7BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		858DCEAB21ACBEF100ACD7BF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 858DCEAA21ACBEF100ACD7BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		858DCEAD21ACBEF100ACD7BF /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 858DCEAC21ACBEF100ACD7BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		858DCEAF21ACBEF100ACD7BF /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 858DCEAE21ACBEF100ACD7BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		858DCE4A21AB828B00ACD7BF /* Resources */ = {
@@ -230,8 +408,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				858DCE5A21AB828C00ACD7BF /* LaunchScreen.storyboard in Resources */,
+				85BCF20221B46EFF0009A672 /* Upload2.png in Resources */,
+				85BCF20D21B49DD50009A672 /* ReCenter2.png in Resources */,
 				858DCE5721AB828C00ACD7BF /* Assets.xcassets in Resources */,
-				858DCE5521AB828B00ACD7BF /* Main.storyboard in Resources */,
+				85BCF1FC21B466890009A672 /* Main.storyboard in Resources */,
+				85BCF1F921B4644F0009A672 /* Camera.png in Resources */,
+				85BCF20021B46E650009A672 /* View.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				858DCE5221AB828B00ACD7BF /* ViewController.swift in Sources */,
+				85BCF21121B4B2BB0009A672 /* TableViewController.swift in Sources */,
 				858DCE5021AB828B00ACD7BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,31 +465,36 @@
 /* Begin PBXTargetDependency section */
 		858DCE6221AB828C00ACD7BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 858DCE4B21AB828B00ACD7BF /* Salamanders */;
+			target = 858DCE4B21AB828B00ACD7BF /* HerpMap */;
 			targetProxy = 858DCE6121AB828C00ACD7BF /* PBXContainerItemProxy */;
 		};
 		858DCE6D21AB828C00ACD7BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 858DCE4B21AB828B00ACD7BF /* Salamanders */;
+			target = 858DCE4B21AB828B00ACD7BF /* HerpMap */;
 			targetProxy = 858DCE6C21AB828C00ACD7BF /* PBXContainerItemProxy */;
+		};
+		858DCECC21ACBF4200ACD7BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 858DCECB21ACBF4200ACD7BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		858DCE5321AB828B00ACD7BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				858DCE5421AB828B00ACD7BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		858DCE5821AB828C00ACD7BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				858DCE5921AB828C00ACD7BF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		85BCF1FA21B466890009A672 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85BCF1FB21B466890009A672 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,6 +619,7 @@
 		858DCE7521AB828C00ACD7BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34DLNT227R;
@@ -449,6 +638,7 @@
 		858DCE7621AB828C00ACD7BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34DLNT227R;
@@ -481,7 +671,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salamanders.app/Salamanders";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HerpMap.app/HerpMap";
 			};
 			name = Debug;
 		};
@@ -502,7 +692,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salamanders.app/Salamanders";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HerpMap.app/HerpMap";
 			};
 			name = Release;
 		};
@@ -549,7 +739,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		858DCE4721AB828B00ACD7BF /* Build configuration list for PBXProject "Salamanders" */ = {
+		858DCE4721AB828B00ACD7BF /* Build configuration list for PBXProject "HerpMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				858DCE7221AB828C00ACD7BF /* Debug */,
@@ -558,7 +748,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		858DCE7421AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "Salamanders" */ = {
+		858DCE7421AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "HerpMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				858DCE7521AB828C00ACD7BF /* Debug */,
@@ -567,7 +757,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		858DCE7721AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "SalamandersTests" */ = {
+		858DCE7721AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "HerpMapTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				858DCE7821AB828C00ACD7BF /* Debug */,
@@ -576,7 +766,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		858DCE7A21AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "SalamandersUITests" */ = {
+		858DCE7A21AB828C00ACD7BF /* Build configuration list for PBXNativeTarget "HerpMapUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				858DCE7B21AB828C00ACD7BF /* Debug */,
